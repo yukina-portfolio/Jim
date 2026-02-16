@@ -9,6 +9,7 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 * {
@@ -41,18 +42,89 @@ a:active {
 /* Apply to all pages ‐ header */
 
 header {
-  background-image: url(images/header.jpeg);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 30px;
+  color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 #number {
   display: flex;
-  justify-content: flex-end;
   gap: 30px;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  padding-top: 120px;
+  transition: 0.3s;
+  z-index: 999;
+  background: rgba(102, 187, 106, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  padding: 20px;
   color: white;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#menu-btn:checked ~ nav {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 /* Apply to all pages ‐ hero */
@@ -78,33 +150,34 @@ header {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);  
 }
 
 #campaign {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 5%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 #campaign2 {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .campaign {
-  border: 1px solid gold;
-  box-sizing: border-box;
+  background-color: #66BB6A;
   border-radius: 50%;
+  box-shadow: -5px 0 20px rgba(255, 255, 255, 0.3);
   padding: 30px;
+  margin: 10px 0;
 }
 
 .zero {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 /* Apply to all pages ‐ offer */
@@ -136,5 +209,21 @@ header {
 
   html {
     font-size: clamp(12px, 2vw, 18px);
+  }
+
+  #catch {
+    font-size: 1rem;
+  }
+
+  #campaign {
+    font-size: 1rem;
+  }
+
+  .zero {
+    font-size: 2rem;
+  }
+
+  nav {
+    width: 150px;
   }
 }
