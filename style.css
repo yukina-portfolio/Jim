@@ -233,7 +233,7 @@ nav li {
   }
 
   #hero {
-    background-position: right center;
+    background-position: 80% center;
     justify-content: flex-end;
     gap: 30px;
   }
