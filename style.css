@@ -47,7 +47,7 @@ header {
   left: 0;
   width: 100%;
   padding: 30px;
-  color: white;
+  color: #FFF5E6;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -70,10 +70,9 @@ header {
   padding: 5px 15px;
   background: linear-gradient(
     to bottom,
-    #FFB347, /* 明るいオレンジ */
-    #FF7F50  /* コーラル */
+    #FFB347,
+    #FF7F50
     );
-  color: #fff;
   border-radius: 999px;
   box-shadow:
     0 6px 16px rgba(40, 70, 60, 0.12),
@@ -105,7 +104,7 @@ header {
 
 .hamburger span {
   height: 3px;
-  background: white;
+  background: #FFF5E6;
   border-radius: 3px;
   transition: 0.3s;
 }
@@ -131,7 +130,7 @@ nav ul {
 
 nav li {
   padding: 20px;
-  color: white;
+  color: #FFF5E6;
   font-size: 1.2rem;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -163,7 +162,7 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: white;
+  color: #FFF5E6;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); 
 }
 
@@ -186,7 +185,7 @@ nav li {
     2px -2px 2px rgba(255,127,80,0.9),
     -2px -2px 2px rgba(255,127,80,0.9),
     0 0 5px rgba(255,127,80,0.8);
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 #catch p {
@@ -202,34 +201,19 @@ nav li {
 
 .gloom {
   position: relative;
-  color: #5a3a34;
   font-size: 2.5rem;
   letter-spacing: 0.2em;
   display: inline-block;
-  text-shadow:
-    -1px -1px 0 #fff,
-     1px -1px 0 #fff,
-    -1px  1px 0 #fff,
-     1px  1px 0 #fff;
+  background-color: rgba(44, 62, 80, 0.85);
+  padding: 0 10px;
 }
 
-.gloom::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 14px;
-  background: url("data:image/svg+xml,%3Csvg width='30' height='14' viewBox='0 0 30 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7 Q7.5 0 15 7 Q22.5 14 30 7' stroke='%231F2A44' fill='none' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
-  background-size: 30px 14px;
-}
-
-.masking2::after {
+.masking1::after {
   content: "";
   position: absolute;
   left:0;
   right: 0;
-  bottom: 0.5%;
+  bottom: 0;
   height: 1.5em;
   background: linear-gradient(
     to right,
@@ -244,6 +228,10 @@ nav li {
     2% 0%, 98% 5%, 100% 90%, 95% 100%, 
     3% 95%, 0% 10%
   );
+}
+
+.masking2 {
+  margin-top: 5%;
 }
 
 .month {
@@ -328,24 +316,8 @@ nav li {
     font-size: 1.2rem;
   }
 
-  .gloom {
-    font-size: 1rem;
-    text-shadow:
-    -0.03em -0.03em 0 #fff,
-     0.03em -0.03em 0 #fff,
-    -0.03em  0.03em 0 #fff,
-     0.03em  0.03em 0 #fff;
-  }
-
-  .gloom::after {
-    bottom: -0.1em;
-    height: 6px;
-    background: url("data:image/svg+xml,%3Csvg width='16' height='6' viewBox='0 0 16 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3 Q4 0 8 3 Q12 6 16 3' stroke='%231F2A44' fill='none' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
-    background-size: 16px 6px;
-  }
-
   .month {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   #campaign {
@@ -367,5 +339,9 @@ nav li {
   #number h4 {
     font-size: 0.5rem;
   }
-  
+
+  .gloom {
+    font-size: 1.3rem;
+    padding: 0 5px;
   }
+}
