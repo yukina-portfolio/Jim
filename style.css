@@ -246,7 +246,7 @@ nav li {
   );
 }
 
-.yon {
+.month {
   font-size: 5rem;
 }
 
@@ -330,6 +330,11 @@ nav li {
 
   .gloom {
     font-size: 1rem;
+    text-shadow:
+    -0.03em -0.03em 0 #fff,
+     0.03em -0.03em 0 #fff,
+    -0.03em  0.03em 0 #fff,
+     0.03em  0.03em 0 #fff;
   }
 
   .gloom::after {
@@ -339,7 +344,7 @@ nav li {
     background-size: 16px 6px;
   }
 
-  .yon {
+  .month {
     font-size: 1.5rem;
   }
 
