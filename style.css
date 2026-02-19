@@ -325,7 +325,7 @@ nav li {
   }
 
   #catch {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .gloom {
@@ -338,7 +338,7 @@ nav li {
   }
 
   .gloom::after {
-    bottom: -0.4em;
+    bottom: -0.1em;
     height: 6px;
     background: url("data:image/svg+xml,%3Csvg width='16' height='6' viewBox='0 0 16 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3 Q4 0 8 3 Q12 6 16 3' stroke='%231F2A44' fill='none' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
     background-size: 16px 6px;
