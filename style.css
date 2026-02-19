@@ -258,7 +258,7 @@ nav li {
   box-shadow: -5px 0 20px rgba(255, 255, 255, 0.3);
   padding: 30px;
   margin: 10px 0;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
 }
 
 .zero {
@@ -292,7 +292,7 @@ nav li {
   background-color: #FF7F50;
   color: #FFF5E6;
   border-radius: 999px; 
-  padding: 2%;
+  padding: 3%;
 }
 
 .why {
@@ -331,6 +331,19 @@ nav li {
     font-size: clamp(12px, 2vw, 18px);
   }
 
+  /* Apply to all pages ‐ header */
+
+  nav {
+    width: 150px;
+  }
+
+  .number h4 {
+    color: #FFF5E6;
+    font-size: 0.5rem;
+  }
+
+  /* Apply to all pages ‐ hero */
+
   #hero {
     background-position: 80% center;
     justify-content: flex-end;
@@ -357,19 +370,12 @@ nav li {
     font-size: 2.5rem;
   }
 
-  nav {
-    width: 150px;
-  }
-
-  .number h4 {
-    color: #FFF5E6;
-    font-size: 0.5rem;
-  }
-
   .gloom {
     font-size: 1.3rem;
     padding: 0 5px;
   }
+
+  /* Apply to all pages ‐ offer */
 
   #offer {
     font-size: 1rem;
