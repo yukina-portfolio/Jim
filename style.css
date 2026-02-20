@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px;
+  letter-spacing: 0.2em;
   overflow-x: hidden;
 }
 
@@ -65,12 +66,12 @@ header {
   gap: 30px;
 }
 
-.number {
+.botton {
   display: flex;
   gap: 30px;
 }
 
-.number h4 {
+.botton h4 {
   display: inline-block;
   padding: 8px 15px;
   border-radius: 5px;
@@ -192,7 +193,6 @@ nav li {
 .gloom {
   position: relative;
   font-size: 2.5rem;
-  letter-spacing: 0.2em;
   display: inline-block;
   background-color: rgba(44, 62, 80, 0.85);
   padding: 0 10px;
@@ -258,7 +258,6 @@ nav li {
   box-shadow: -5px 0 20px rgba(255, 255, 255, 0.3);
   padding: 30px;
   margin: 10px 0;
-  letter-spacing: 0.2em;
   text-shadow: none;
 }
 
@@ -284,10 +283,6 @@ nav li {
   margin-bottom: 2%;
 }
 
-.offer h2 {
-  letter-spacing: 0.1em;
-}
-
 .fee2 {
   display: inline-block;
   background-color: #FF7F50;
@@ -308,6 +303,46 @@ nav li {
 }
 
 /* Apply to all pages ‐ problem */
+
+#problem {
+  background: #2C3E50;
+  padding: 10%;
+}
+
+#problem h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.problem {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.problem li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  color: #2C3E50;
+  padding: 3%;
+  padding-right: 3%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.problem li::before {
+  content: "✔";
+  width: 30px;
+  height: 30px;
+  background: #FF7F50;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+}
 
 /* Apply to all pages ‐ footer */
 
@@ -334,6 +369,7 @@ nav li {
 
   html {
     font-size: clamp(12px, 2vw, 18px);
+    letter-spacing: 0.1em;
   }
 
   /* Apply to all pages ‐ header */
@@ -342,7 +378,7 @@ nav li {
     width: 150px;
   }
 
-  .number h4 {
+  .botton h4 {
     color: #FFF5E6;
     font-size: 0.5rem;
   }
@@ -384,5 +420,12 @@ nav li {
 
   #offer {
     font-size: 1rem;
+  }
+
+  /* Apply to all pages ‐ problem */
+
+  .problem li::before {
+    width: 20px;
+    height: 20px;
   }
 }
