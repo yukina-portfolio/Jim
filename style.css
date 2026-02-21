@@ -430,7 +430,7 @@ nav li {
   }
 
   .problem li::before {
-    color: #FFF5E6;
+    color: #FFF5E6 !important;
     width: 25px;
     height: 25px;
   }
