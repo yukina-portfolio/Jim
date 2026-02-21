@@ -144,7 +144,6 @@ nav li {
 
 #hero {
   background: url(images/hero.jpeg);
-  filter: brightness(0.9) contrast(1) saturate(1.2) sepia(0.2);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -335,7 +334,7 @@ nav li {
 }
 
 .problem li::before {
-  content: "\2714";
+  content: "✔";
   display: flex;
   align-items: center;
   justify-content: center;
