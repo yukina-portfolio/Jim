@@ -335,7 +335,7 @@ nav li {
 }
 
 .problem li::before {
-  content: "✔";
+  content: "\2714";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,8 +438,7 @@ nav li {
   }
 
   .problem li::before {
-    content: "✔";
-    color: #FFF5E6;
+    font-size: 0.8rem;
     width: 20px;
     height: 20px;
   }
