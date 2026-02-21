@@ -336,6 +336,7 @@ nav li {
 
 .problem li::before {
   content: "✔";
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   background: #FF7F50;
