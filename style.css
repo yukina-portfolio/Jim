@@ -5,6 +5,7 @@
 html {
   font-size: 16px;
   letter-spacing: 0.2em;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -268,10 +269,24 @@ nav li {
 
 #offer {
   text-align: center;
-  background-color: #FFF5E6;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,127,80,0.15) 6px, transparent 7px),
+    radial-gradient(circle at 80% 20%, rgba(44,62,80,0.12) 5px, transparent 6px),
+    radial-gradient(circle at 70% 75%, rgba(255,127,80,0.12) 4px, transparent 5px),
+    radial-gradient(circle at 30% 80%, rgba(44,62,80,0.1) 6px, transparent 7px),
+    linear-gradient(180deg, #FFF5E6 0%, #ffe0d2 100%);
+  background-size: 300px 300px, 250px 250px, 280px 280px, 320px 320px, cover;
   color: #2C3E50;
   padding: 10%;
   font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 中身を前面に */
+#offer > * {
+  position: relative;
+  z-index: 1;
 }
 
 .offer {
@@ -280,25 +295,39 @@ nav li {
 
 .offer h4 {
   margin-bottom: 2%;
+  font-weight: 700;
 }
+
+/* 価格バッジを少し元気に */
 
 .fee2 {
   display: inline-block;
   background-color: #FF7F50;
   color: #FFF5E6;
   border-radius: 999px; 
-  padding: 3%;
+  padding: 3% 6%;
+  box-shadow: 0 8px 20px rgba(255,127,80,0.3);
+  font-weight: 900;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
+.fee2:hover {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+/* WHYボックスも少しポップ */
 .why {
   display: inline-block;
   border: 3px dashed #FF7F50;
   padding: 5%;
-  line-height: 1.5;
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px;
 }
 
 .why h3 {
   margin-bottom: 3%;
+  font-weight: 800;
 }
 
 /* Apply to all pages ‐ problem */
@@ -346,6 +375,109 @@ nav li {
   border-radius: 50%;
   text-align: center;
   font-weight: bold;
+}
+
+/* Apply to all pages ‐ strength */
+
+#strength {
+  background: linear-gradient(
+    180deg,
+    #FFF5E6 0%,
+    #ffe0d2 100%
+  );
+  padding: 10%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #2C3E50;
+}
+
+/* 背景にポップな丸 */
+#strength::before,
+#strength::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #FF7F50;
+  opacity: 0.08;
+}
+
+#strength::before {
+  width: 250px;
+  height: 250px;
+  top: -80px;
+  left: -80px;
+}
+
+#strength::after {
+  width: 180px;
+  height: 180px;
+  bottom: -60px;
+  right: -60px;
+}
+
+/* タイトル */
+#strength h2 {
+  font-size: 3rem;
+  margin-bottom: 8%;
+  font-weight: 900;
+}
+
+/* カードレイアウト */
+.cards {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* カード */
+.card {
+  background: white;
+  border-radius: 30px;
+  padding: 40px 30px;
+  width: 350px;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(255, 127, 80, 0.25);
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+/* 左上にポップ丸 */
+.card::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 100px;
+  height: 100px;
+  background: #FF7F50;
+  border-radius: 50%;
+  opacity: 0.12;
+}
+
+/* ホバー */
+.card:hover {
+  transform: translateY(-18px) rotate(-1deg) scale(1.05);
+  box-shadow: 0 35px 80px rgba(255, 127, 80, 0.35);
+}
+
+/* 見出し */
+.card h3 {
+  margin-bottom: 5%;
+  font-size: 2rem;
+}
+
+/* 価格強調 */
+.price {
+  background: #FF7F50;
+  color: white;
+  display: inline-block;
+  padding: 5%;
+  border-radius: 10px;
+  font-weight: 900;
+  margin-bottom: 5%;
 }
 
 /* Apply to all pages ‐ footer */
