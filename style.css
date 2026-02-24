@@ -377,6 +377,64 @@ nav li {
   font-weight: bold;
 }
 
+/* Apply to all pages ‐ training */
+
+#training {
+  text-align: center;
+  padding: 10%;
+  color: #2C3E50;
+}
+
+#training h2 {
+  font-size: 2.5rem;
+}
+
+.training-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.flow-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.flow-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.flow-text {
+  flex: 1;
+  text-align: left;
+}
+
+.flow-step {
+  display: inline-block;
+  background: #FF7F50;
+  color: white;
+  padding: 2% 5%;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  font-size: 0.7rem;
+}
+
+.flow-text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2%;
+}
+
+.flow-image {
+  flex: 1;
+}
+
+.flow-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
 /* Apply to all pages ‐ strength */
 
 #strength {
@@ -573,5 +631,13 @@ nav li {
     font-size: 0.8rem;
     width: 20px;
     height: 20px;
+  }
+
+  /* Apply to all pages ‐ training */
+
+  .flow-item,
+  .flow-item.reverse {
+    flex-direction: column;
+    gap: 30px;
   }
 }
