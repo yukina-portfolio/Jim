@@ -386,8 +386,17 @@ nav li {
 }
 
 #training h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
+#training h3 {
+  font-size: 1.5rem;
+  margin: 5% 0;
+}
+
+/* =========================
+   FLOW LAYOUT
+========================= */
 
 .training-flow {
   display: flex;
@@ -410,19 +419,33 @@ nav li {
   text-align: left;
 }
 
-.flow-step {
-  display: inline-block;
-  background: #FF7F50;
-  color: white;
-  padding: 2% 5%;
-  border-radius: 10px;
-  margin-bottom: 3%;
-  font-size: 0.7rem;
+.flow-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5%;
 }
 
-.flow-text h4 {
-  font-size: 1.3rem;
-  margin-bottom: 2%;
+/* 丸 */
+.flow-step {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255,127,80,0.18),
+    rgba(255,127,80,0.05)
+  );
+  color: #FF7F50;
+  font-weight: bold;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.flow-title h4 {
+  font-size: 1.5rem;
 }
 
 .flow-image {
@@ -432,7 +455,13 @@ nav li {
 .flow-image img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+}
+
+.flow-image img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.12);
 }
 
 /* Apply to all pages ‐ strength */
@@ -640,4 +669,14 @@ nav li {
     flex-direction: column;
     gap: 30px;
   }
+
+  .flow-step {
+    width: 100px;
+    height: 100px;
+  }
+
+  #strength h2 {
+    font-size: 2rem;
+  }
+
 }
