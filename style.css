@@ -536,7 +536,7 @@ nav li {
   }
 
   .month {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .gloom {
@@ -560,11 +560,12 @@ nav li {
 
   #offer {
     font-size: 1rem;
+    background-size: 200px 200px, 180px 180px, 200px 200px, 220px 220px, cover;
   }
 
   /* Apply to all pages ‐ problem */
 
-  #problem h2 {
+  #problem h2, .card h3 {
     font-size: 1.5rem;
   }
 
