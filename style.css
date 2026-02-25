@@ -713,8 +713,8 @@ nav li {
 
   .flow-item:not(:last-child)::after {
     bottom: -15px;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
   }
 
   .training-flow {
