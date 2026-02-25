@@ -380,24 +380,10 @@ nav li {
 /* Apply to all pages ‐ training */
 
 #training {
-  position: relative;
   text-align: center;
   padding: 10%;
   color: #2C3E50;
   background-color: #f9f6f2;
-}
-
-#training::before {
-  content: "";
-  position: absolute;
-  top: 150px;
-  height: calc(100% - 200px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  z-index: 0;
-  background: rgba(44, 62, 80, 0.08);
 }
 
 #training h2 {
@@ -433,25 +419,34 @@ nav li {
   right: -50px;
 }
 
-/* =========================
-   FLOW LAYOUT
-========================= */
-
 .training-flow {
   display: flex;
   flex-direction: column;
   gap: 100px;
-  z-index: 1;
 }
 
 .flow-item {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 100px;
 }
 
 .flow-item.reverse {
   flex-direction: row-reverse;
+}
+
+.flow-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid rgba(44, 62, 80, 0.4);
+  border-bottom: 2px solid rgba(44, 62, 80, 0.4);
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .flow-text {
@@ -714,6 +709,12 @@ nav li {
   .flow-item.reverse {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .flow-item:not(:last-child)::after {
+    bottom: -15px;
+    width: 10px;
+    height: 10px;
   }
 
   .training-flow {
