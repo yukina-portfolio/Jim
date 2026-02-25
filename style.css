@@ -691,10 +691,14 @@ nav li {
 
   /* Apply to all pages ‐ training */
 
+  #training h2 {
+    font-size: 1.5rem;
+  }
+
   .flow-item,
   .flow-item.reverse {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 
   .flow-step {
