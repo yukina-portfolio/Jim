@@ -851,6 +851,24 @@ nav li {
 
   /* Apply to all pages ‐ price */
 
+  #price::before {
+    background-attachment: scroll;
+  }
+
+  .price-wrapper {
+    flex-direction: row;      /* 横並び維持 */
+    flex-wrap: nowrap;        /* 折り返さない */
+    overflow-x: auto;         /* はみ出したら横スクロール */
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .price-card {
+    flex: 0 0 260px;          /* カード幅固定 */
+    width: auto;
+  }
+
+
   /* Apply to all pages ‐ strength */
 
   #strength h2 {
