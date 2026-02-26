@@ -855,24 +855,55 @@ nav li {
     background-attachment: scroll;
   }
 
+  .price-lead {
+    margin-bottom: 10%;
+  }
+
+
   .price-wrapper {
-    flex-direction: row;      /* 横並び維持 */
-    flex-wrap: nowrap;        /* 折り返さない */
-    overflow-x: auto;         /* はみ出したら横スクロール */
-    gap: 20px;
-    padding-bottom: 10px;
+    flex-wrap: nowrap;
+    gap: 10px;
   }
 
   .price-card {
-    flex: 0 0 260px;          /* カード幅固定 */
-    width: auto;
+    width: 33.33%;
+    padding: 20px 10px;
+    border-radius: 15px;
   }
 
+  .price-card h3 {
+    font-size: 0.8rem;
+  }
+
+  .price-amount span {
+    font-size: 0.8rem;
+  }
+  
+  .price-amount small {
+    font-size: 0.5rem;
+  }
+
+  .price-amount {
+    font-size: 1rem;
+  }
+
+  .price-card li {
+    font-size: 0.5rem;
+  }
+
+  .price-btn {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .badge {
+    padding: 3px 15px;
+    font-size: 0.5rem;
+  }
 
   /* Apply to all pages ‐ strength */
 
   #strength h2 {
     font-size: 2rem;
   }
-
 }
