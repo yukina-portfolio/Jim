@@ -303,7 +303,7 @@ nav li {
 .fee2 {
   display: inline-block;
   background-color: #FF7F50;
-  color: #FFF5E6;
+  color: white;
   border-radius: 999px; 
   padding: 3% 6%;
   box-shadow: 0 8px 20px rgba(255,127,80,0.3);
@@ -321,7 +321,7 @@ nav li {
   display: inline-block;
   border: 3px dashed #FF7F50;
   padding: 5%;
-  background: rgba(255,255,255,0.7);
+  background: white;
   border-radius: 20px;
 }
 
@@ -604,6 +604,129 @@ nav li {
   font-size: 2rem;
 }
 
+/* Apply to all pages ‐ price */
+
+#price {
+  position: relative;
+  padding: 10%;
+  text-align: center;
+}
+
+#price::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(
+      rgba(44,62,80,0.75),
+      rgba(44,62,80,0.75)
+    ),
+    url("images/gym-bg.jpeg") center / cover no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+#price > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.price-lead {
+  color: white;
+  margin-bottom: 6%;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+}
+
+.price-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2C3E50;
+}
+
+.price-amount {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #2C3E50;
+  margin-bottom: 5%;
+}
+
+.price-amount span {
+  font-size: 1rem;
+}
+
+.price-amount small {
+  font-size: 1rem;
+  color: gray;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10%;
+}
+
+.price-card li {
+  margin-bottom: 3%;
+}
+
+.price-btn {
+  display: inline-block;
+  background: #FF7F50;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.price-btn:hover {
+  background: #e5673d;
+}
+
+/* おすすめ中央強調 */
+.featured {
+  transform: scale(1.08);
+  border: 2px solid #FF7F50;
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FF7F50;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
 /* Apply to all pages ‐ footer */
 
 #botton {
@@ -713,8 +836,8 @@ nav li {
 
   .flow-item:not(:last-child)::after {
     bottom: -15px;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
   }
 
   .training-flow {
@@ -725,6 +848,8 @@ nav li {
     width: 100px;
     height: 100px;
   }
+
+  /* Apply to all pages ‐ price */
 
   /* Apply to all pages ‐ strength */
 
