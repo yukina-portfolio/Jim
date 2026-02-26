@@ -332,8 +332,24 @@ nav li {
 /* Apply to all pages ‐ problem */
 
 #problem {
+  position: relative;
   background: #2C3E50;
   padding: 10%;
+  z-index: 1;
+}
+
+#problem::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(
+      rgba(44,62,80,0.75),
+      rgba(44,62,80,0.75)
+    ),
+    url("images/problem-bg.jpeg") center / cover no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
 }
 
 #problem h2 {
@@ -369,7 +385,7 @@ nav li {
   flex-shrink: 0;
   width: 30px;
   height: 30px;
-  background: #FF7F50;
+  background: #2C3E50;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -811,6 +827,9 @@ nav li {
 
   /* Apply to all pages ‐ problem */
 
+  #problem::before {
+    background-attachment: scroll;
+  }
   #problem h2, .card h3 {
     font-size: 1.5rem;
   }
