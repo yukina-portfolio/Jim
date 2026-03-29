@@ -678,17 +678,29 @@ nav li {
 
 /* Apply to all pages ‐ footer */
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FF7F50;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  z-index: 1000;
+  font-size: 1.5rem;
+}
+
 #botton {
-    display: inline-block;
-    color: white;
-    background: linear-gradient(to bottom, #3a3a3a, #111);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border: 3px solid white;
-    margin-top: 10px;
-    padding: 30px;
-    font-size: 2rem;
-    transition: all 0.3s ease;
+  display: inline-block;
+  background: linear-gradient(to bottom, #20B2AA, #1a8f8a);
+  border: 2px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 30px;
+  font-size: 2rem;
+  transition: all 0.3s ease;
 }
 
 #botton:hover {
@@ -723,7 +735,7 @@ nav li {
   /* Apply to all pages ‐ hero */
 
   #hero {
-    background-position: 80% center;
+    background-position: 70%;
     justify-content: flex-end;
     gap: 30px;
   }
@@ -787,7 +799,7 @@ nav li {
 
   .comparison-table th,
   .comparison-table td {
-    border: 0.5px solid black;
+    border: 0.7px solid black;
     padding: 10px;
     font-size: 0.5rem;
   }
@@ -798,6 +810,20 @@ nav li {
 
   .category {
     width: 100px;
+  }
+
+  /* Apply to all pages ‐ offer */
+
+  #offer h4, #offer h2 {
+    font-size: 1rem;
+  }
+
+  #offer p {
+    font-size: 0.6rem;
+  }
+
+  .why {
+    max-width: 250px;
   }
 
   /* Apply to all pages ‐ problem */
@@ -816,10 +842,19 @@ nav li {
     height: 20px;
   }
 
+  .problem li {
+    font-size: 0.6rem;
+    gap: 5px;
+  }
+
   /* Apply to all pages ‐ training */
 
   #training h2 {
     font-size: 1.5rem;
+  }
+
+  #training p {
+    font-size: 0.7rem;
   }
 
   .flow-item,
@@ -893,5 +928,17 @@ nav li {
 
   #faq {
     background-attachment: scroll;
+  }
+
+  /* Apply to all pages ‐ footer */
+
+  footer {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  #botton {
+    padding: 20px;
+    font-size: 1.5rem;
   }
 }
